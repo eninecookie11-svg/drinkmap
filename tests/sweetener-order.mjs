@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {surveyCounts,orderSweeteners} from '../public/sweetener-order.js';
+import {surveyCounts,orderSweeteners,catalogCounts,orderCatalogSweeteners} from '../public/sweetener-order.js';
 const data=JSON.parse(fs.readFileSync('public/data/sweetener-survey-2026.json','utf8'));
 const counts=surveyCounts(data);
 assert.equal(data.products.length,20);
@@ -17,3 +17,13 @@ assert.deepEqual(orderSweeteners([['미조사A'],['미조사B']],counts),[['미�
 assert.deepEqual(orderSweeteners([['스테비올배당체'],['알룰로스']],counts),[['스테비올배당체'],['알룰로스']]);
 for(const change of [d=>d.products.push(d.products[0]),d=>d.products[0].labelKcal=12,d=>d.products[0].sourceId='missing',d=>d.products[0].saleSourceId='birak-label',d=>d.sources[0].checked='2024-01-01']){const invalid=structuredClone(data);change(invalid);assert.throws(()=>surveyCounts(invalid));}
 console.log('감미료 외부 조사 검사 통과: 20종·중복 제외·출처·0kcal·미조사/동률·카드 정렬');
+const fixture=[{sweeteners:[['수크랄로스',null,'mg'],['수크랄로스',1,'mg'],['스테비올배당체',null,'mg']]},{sweeteners:[['수크랄로스',null,'mg'],['효소처리스테비아',null,'mg']]}];
+const current=catalogCounts(fixture);
+assert.equal(current.get('수크랄로스'),2,'한 제품 안의 중복 감미료는 한 번만 집계');
+assert.equal(current.get('스테비올배당체'),1);
+assert.equal(current.get('효소처리스테비아'),1);
+assert.deepEqual(orderCatalogSweeteners([['효소처리스테비아'],['수크랄로스'],['스테비올배당체']],current).map(s=>s[0]),['수크랄로스','스테비올배당체','효소처리스테비아']);
+const products=JSON.parse(fs.readFileSync('public/data/products.json','utf8'));
+const dictionary=JSON.parse(fs.readFileSync('public/data/dictionary.json','utf8'));
+for(const name of catalogCounts(products).keys())assert(dictionary.some(d=>d.name===name),`${name}: 사전 누락`);
+console.log('등록 감미료 검사 통과: 제품별 중복 제거·함량 미확인 포함·원료명 구분·동률 가나다순·사전 누락 없음');

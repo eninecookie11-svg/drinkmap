@@ -8,3 +8,14 @@ export function surveyCounts(survey){
  }return counts;
 }
 export function orderSweeteners(sweeteners,counts){return [...sweeteners].sort((a,b)=>(counts.get(sweetenerGroup(b[0]))||0)-(counts.get(sweetenerGroup(a[0]))||0));}
+// Count each named ingredient once per registered product, regardless of amount.
+// Preserve distinct label names: steviol glycosides and enzyme-treated stevia
+// are separate entries in the current catalog.
+export function catalogCounts(products){
+ const counts=new Map();
+ for(const p of products)for(const name of new Set(p.sweeteners.map(s=>s[0])))counts.set(name,(counts.get(name)||0)+1);
+ return counts;
+}
+export function orderCatalogSweeteners(sweeteners,counts){
+ return [...sweeteners].sort((a,b)=>(counts.get(b[0])||0)-(counts.get(a[0])||0)||a[0].localeCompare(b[0],'ko'));
+}

@@ -6,7 +6,7 @@ try {
  const page=await browser.newPage();
  await page.goto('http://127.0.0.1:4173');
  await page.locator('.product-card').first().waitFor();
- assert.deepEqual(await page.locator('.topics button').allTextContents(),['모든 음료 28','☾ 카페인 없는 음료','수크랄로스 포함','아세설팜칼륨 포함','에리스리톨 포함']);
+ assert.deepEqual(await page.locator('.topics button').allTextContents(),['모든 음료 28','☾ 카페인 없는 음료','수크랄로스 포함','아세설팜칼륨 포함','알룰로스 포함']);
  assert((await page.locator('[data-product=pepsi] .tags').innerText()).includes('카페인 약 46mg'));
  assert((await page.locator('[data-product=pepsi-free] .tags').innerText()).includes('카페인 없음'));
  assert.equal(await page.locator('#sort option:checked').innerText(),'기본순');
@@ -338,5 +338,23 @@ try {
   assert(await page.locator('dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));
   await page.screenshot({path:`test-results/miero-label-${width}.png`});
  }
- console.log('탐색 메뉴 검증 통과: 감미료 3개·선택 동기화·표시 이미지·PC/390px/320px');
+ await page.keyboard.press('Escape');
+ await page.locator('nav [data-page=dictionary]').click();
+ await page.locator('.dict-entry').first().waitFor();
+ const sweetenerOrder=['수크랄로스','아세설팜칼륨','알룰로스','스테비올배당체','에리스리톨','아스파탐','소비톨','효소처리스테비아'];
+ assert.deepEqual(await page.locator('.dict-entry h3').allTextContents(),sweetenerOrder);
+ assert.deepEqual(await page.locator('#sweetener-filters input').evaluateAll(es=>es.map(e=>e.value)),sweetenerOrder);
+ await page.locator('.survey-method summary').click();
+ assert.deepEqual(await page.locator('.survey-method dl dd').allTextContents(),['27종','23종','9종','7종','6종','3종','1종','1종']);
+ for(const width of [1440,390,320]){
+  await page.setViewportSize({width,height:900});
+  assert(await page.locator('dialog').evaluate(e=>e.scrollWidth<=e.clientWidth));
+  await page.screenshot({path:`test-results/catalog-sweeteners-${width}.png`});
+ }
+ await page.locator('[data-find-sweet=소비톨]').click();
+ assert.equal(await page.locator('.product-card').count(),1);
+ await page.locator('#grid [data-product=tams-pineapple]').click();
+ await page.locator('dialog[open]').waitFor();
+ assert.deepEqual(await page.locator('.sweetener-labels button').allTextContents(),['수크랄로스 ↗','알룰로스 ↗','스테비올배당체 ↗','에리스리톨 ↗','소비톨 ↗']);
+ console.log('탐색 메뉴 검증 통과: 감미료 빈도순·사전8종·누락 감미료 탐색·표시 이미지·PC/390px/320px');
 } finally {await browser.close()}
