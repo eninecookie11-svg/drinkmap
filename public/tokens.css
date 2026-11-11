@@ -14,3 +14,4 @@
 :root{--title-band-shift-x:.34em;--title-band-shift-y:.12em;--nav-hover-scale:1.04;--nav-band-hover-drop:.24em}
 
 :root{--nav-emphasis-weight:800;--nav-dictionary-width:5.5em;--nav-price-width:4.5em}
+:root{--tracking-body:.015em;--tracking-heading:-.015em;--tracking-logo:-.025em}
