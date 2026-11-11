@@ -124,6 +124,18 @@ button,input,select{letter-spacing:inherit}
 .survey-method summary{cursor:pointer;font-weight:700;min-height:var(--touch-target);display:flex;align-items:center}
 .survey-method summary::after{content:"⌄";margin-left:auto;padding-left:var(--space-2)}.survey-method[open] summary::after{content:"⌃"}
 .survey-method summary:focus-visible{outline:2px solid var(--ink);outline-offset:var(--space-1)}
+.desktop-ad{display:none}
+@media(min-width:1400px){
+ body{padding-right:var(--ad-rail-space)}
+ main>.wrap:not(.hero),footer .wrap{position:relative;left:var(--ad-content-shift)}
+ header{width:100vw}
+ .hero.wrap{width:min(100vw,var(--max));margin-left:max(0px,calc((100vw - var(--max))/2));margin-right:0}
+ .desktop-ad{display:flex;position:fixed;right:var(--space-5);top:var(--ad-rail-top);width:var(--ad-rail-width);height:min(var(--ad-rail-height),calc(100dvh - var(--ad-rail-top) - var(--space-5)));border:1px dashed var(--line);border-radius:var(--radius-sm);align-items:center;justify-content:center;flex-direction:column;gap:var(--space-3);padding:var(--space-4);text-align:center;color:var(--muted);pointer-events:none}
+ .desktop-ad span{font-size:var(--text-caption);letter-spacing:.08em}
+ .desktop-ad p{font-size:var(--text-sm)}
+ .desktop-ad small{font-size:var(--text-caption)}
+ .results>.ad-space{display:none}
+}
 .survey-sources{padding-left:var(--space-5);font-size:var(--text-xs);overflow-wrap:anywhere}.survey-sources a{text-decoration:underline;text-underline-offset:var(--space-1)}
 .topics{flex-wrap:wrap;overflow:visible;margin-right:0;margin-bottom:var(--space-2)}
 .topics button{min-height:var(--touch-target)}
