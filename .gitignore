@@ -22,3 +22,6 @@ docs/kca-page-*.png
 .DS_Store
 Thumbs.db
 *.log
+
+# Local API collection reports (never published)
+.local/

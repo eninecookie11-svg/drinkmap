@@ -55,31 +55,31 @@
     "volume": 355,
     "flavor": "라임",
     "color": "#222c32",
-    "kcal": 2,
+    "kcal": 0,
     "caffeine": 46,
     "caffeineStatus": "함유",
-    "sugar": "불검출",
+    "sugar": "0g",
     "sweeteners": [
       [
+        "아스파탐",
+        null,
+        "mg"
+      ],
+      [
         "아세설팜칼륨",
-        46,
+        null,
         "mg"
       ],
       [
         "수크랄로스",
-        60,
-        "mg"
-      ],
-      [
-        "아스파탐",
-        99,
+        null,
         "mg"
       ]
     ],
-    "ingredients": null,
+    "ingredients": "정제수, 이산화탄소, 혼합제제A(카라멜색소, 정제소금, 인산, 합성향료(콜라향), 구연산, 코코넛오일), 혼합제제B(프로필렌글리콜, 정제수, 합성향료(라임향), 구연산삼나트륨, 구연산), 혼합제제D(인산, 카페인(향미증진제), 정제수), 혼합제제C(프로필렌글리콜, 합성향료(라임향)), 아스파탐(감미료, 페닐알라닌함유), 아세설팜칼륨(감미료), 수크랄로스(감미료)",
     "allergens": null,
-    "carbs": null,
-    "sodium": null,
+    "carbs": 0,
+    "sodium": 61,
     "status": "현재 판매 여부 미확인",
     "image": "assets/pepsi.svg",
     "imageType": "제품 구분용 일러스트",
@@ -93,11 +93,25 @@
       "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
     },
     "source": {
+      "title": "롯데칠성음료 공식몰 영양표 · 사용자 제공 이미지",
+      "url": "https://brand.naver.com/lottechilsung/products/5770857283",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "사용자가 해당 공식몰 상품 페이지에서 제공한 이미지의 355ml 한 캔 표시값. 페이지 상품명은 사용자 설명상 펩시제로슈거이며, 사이트의 라임 제품 항목에 사용자 요청으로 적용. 페이지·품목제조보고번호·맛 구분은 직접 확인하지 못함. 카페인 함량과 알레르기는 이 영양표에서 미확인. 사용자가 추가 제공한 원재료명 이미지에서 감미료 3종·카페인 사용 및 페닐알라닌 함유 문구를 확인. 감미료·카페인 함량과 알레르기 표시는 원재료명 이미지에서 미확인. 카페인 46mg은 별도 표시한 2024년 한국소비자원 조사값.",
+      "evidenceType": "user-provided-shop-image"
+    },
+    "protein": 0,
+    "fat": 0,
+    "nutritionBasis": {
+      "amount": 355,
+      "unit": "ml"
+    },
+    "caffeineSource": {
       "title": "한국소비자원 제로음료 품질비교시험",
       "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
       "published": "2024-08-01",
       "checked": "2026-11-11",
-      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
+      "scope": "2024년 시험 대상 펩시 제로슈가 라임 355ml 한 캔의 카페인 시험값 46mg. 현재 판매 제품의 함량을 확인한 값이 아님."
     }
   },
   {

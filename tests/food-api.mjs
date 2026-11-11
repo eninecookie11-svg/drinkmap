@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {main} from '../scripts/collect-food.mjs';
+import {checkPublicSafety} from '../scripts/lib/public-safety.mjs';
+import {diagnose} from '../scripts/lib/food-diagnose.mjs';
+import {classify,verifiedRecord,number,quantity,buildURL,parseResponse,collect,NUTRIENTS,httpError} from '../scripts/lib/food-api.mjs';
+import {applyDrinks,validateDrinks,nutritionBasis,nutrient} from '../public/nutrition.js';
+// Synthetic contract fixture, never published as real product information.
+const target={productId:'coke',name:'테스트 제로',manufacturer:'테스트 제조사',volumeMl:355};
+const row={FOOD_CD:'TEST-ONLY',FOOD_NM_KR:target.name,MAKER_NM:target.manufacturer,DB_CLASS_NM:'상용제품',Z10500:'355ml',SERVING_SIZE:'100g',AMT_NUM1:'0',AMT_NUM3:'-',AMT_NUM4:'0',AMT_NUM6:'0.5',AMT_NUM7:'',AMT_NUM13:'12',SUB_REF_NAME:'테스트 출처',RESEARCH_YMD:'20250101',UPDATE_DATE:'2025-02-02'};
+const checked='2026-11-11';
+assert.deepEqual(NUTRIENTS,{kcal:'AMT_NUM1',protein:'AMT_NUM3',fat:'AMT_NUM4',carbs:'AMT_NUM6',sugar:'AMT_NUM7',sodium:'AMT_NUM13'});
+for(const raw of [null,undefined,'',' ','-','미확인','불검출','<0.5','0.1 미만','12mg','1,2',-1,Infinity])assert.equal(number(raw),null);
+assert.equal(number('0'),0);assert.equal(number('1,000.5'),1000.5);
+assert.deepEqual(quantity('0.355L'),{amount:355,unit:'ml'});assert.deepEqual(quantity('100g'),{amount:100,unit:'g'});assert.equal(quantity('355'),null);
+assert.equal(classify(row,target).status,'candidate');
+for(const changed of [{FOOD_NM_KR:'테스트 제로 카페인'},{MAKER_NM:'다른 제조사'},{Z10500:'355g'},{Z10500:'500ml'},{SERVING_SIZE:''},{DB_CLASS_NM:'품목대표'},{FOOD_CD:null},{UPDATE_DATE:'',RESEARCH_YMD:''}])assert.equal(classify({...row,...changed},target).status,'pending');
+assert.equal(classify(row,{...target,manufacturer:null}).status,'pending');
+assert.equal(classify(row,{...target,productId:null}).status,'pending');
+const key='private-test-key+/=';assert.equal(buildURL(encodeURIComponent(key),'제로').searchParams.get('serviceKey'),key);assert.equal(buildURL(key,'제로').searchParams.get('type'),'json');
+const authError=await httpError({status:401,text:async()=>`<error>SERVICE_KEY_IS_NOT_REGISTERED_ERROR</error><key>${key}</key>`});assert(authError.message.includes('등록되지 않은'));assert(!authError.message.includes(key));
+let diagnosisCalls=0;const diagnostics=await diagnose({key,fetchImpl:async url=>{assert.equal(url.searchParams.has('FOOD_NM_KR'),diagnosisCalls++===2);return {ok:false,status:401,text:async()=>`SECRET ${key} SERVICE_ACCESS_DENIED_ERROR`}}});assert.equal(diagnosisCalls,3);assert(!diagnostics.join('\n').includes(key));assert(diagnostics.join('\n').includes('활용 권한'));
+assert((await httpError({status:401,text:async()=>key})).message.includes('활용신청'));assert(!(await httpError({status:401,text:async()=>key})).message.includes(key));
+const response=items=>({header:{resultCode:'00'},body:{items:{item:items},totalCount:2}});
+assert.equal(parseResponse({response:response(row)}).items.length,1);assert.deepEqual(parseResponse({header:{resultCode:'03'}}),{items:[],total:0});assert.throws(()=>parseResponse({header:{resultCode:'30',resultMsg:key}}),e=>!e.message.includes(key));
+let calls=0;const rows=await collect({key,name:'제로',fetchImpl:async url=>{assert.equal(url.searchParams.get('pageNo'),String(++calls));return {ok:true,json:async()=>response([{...row,FOOD_CD:'T'+calls}])}}});assert.equal(rows.length,2);assert.equal(calls,2);
+await assert.rejects(collect({key,name:'제로',fetchImpl:async()=>{throw new Error('https://private/'+key)}}),e=>!e.message.includes(key));
+await assert.rejects(collect({key,name:'제로',fetchImpl:async()=>({ok:true,json:async()=>response([])})}));
+await assert.rejects(collect({key,name:'제로',maxPages:1,fetchImpl:async()=>({ok:true,json:async()=>response([row])})}));
+const products=JSON.parse(fs.readFileSync('public/data/products.json','utf8'));
+const record=verifiedRecord(row,target,checked),data={schemaVersion:1,drinks:[record]};
+validateDrinks(data,products);assert.equal(record.nutrients.sugar,null);assert.equal(record.nutrients.protein,null);assert.equal(record.nutrients.kcal,0);assert.deepEqual(Object.values(record.separateVerification),[null,null,null,null]);
+const merged=applyDrinks(products,data),p=merged.find(p=>p.id==='coke');assert.equal(p.caffeine,null);assert.deepEqual(p.sweeteners,[]);assert.equal(p.ingredients,null);assert.equal(p.kcal,null);assert.equal(nutrient(p,'carbs'),0.5);assert.equal(nutritionBasis(p),'100g 기준');assert.equal(merged[1],products[1]);
+for(const change of [r=>r.volumeMl=500,r=>r.basis.unit='ml',r=>r.nutrients.sodium=-1,r=>r.source.url+='?serviceKey=bad',r=>r.source.checked='2025-02-30',r=>r.separateVerification.caffeine=0,r=>r.serviceKey=key]){const invalid=structuredClone(data);change(invalid.drinks[0]);assert.throws(()=>validateDrinks(invalid,products));}
+assert.throws(()=>validateDrinks({...data,drinks:[record,record]},products));
+validateDrinks(JSON.parse(fs.readFileSync('public/data/drinks.json','utf8')),products);
+checkPublicSafety();
+const separate=structuredClone(data);separate.drinks[0].separateVerification.caffeine={value:0,volumeMl:355,source:{title:'테스트 포장',url:'https://example.org/package',checked,scope:'동일 제품·용량의 무카페인 표시 확인 (테스트)'}};assert.equal(applyDrinks(products,separate)[0].caffeine,0);
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'drinkmap-food-api-'));const log=console.log;const messages=[];
+try{
+ fs.mkdirSync(path.join(temp,'public/data'),{recursive:true});fs.writeFileSync(path.join(temp,'public/data/products.json'),JSON.stringify(products));fs.writeFileSync(path.join(temp,'public/data/drinks.json'),'{"schemaVersion":1,"drinks":[]}');
+ console.log=(...args)=>messages.push(args.join(' '));
+ const options={root:temp,key,fetchImpl:async()=>({ok:true,json:async()=>({header:{resultCode:'00'},body:{items:[row,{...row,FOOD_CD:'WRONG',Z10500:'355g'}],totalCount:2}})})};
+ await main(['collect','--name',target.name,'--manufacturer',target.manufacturer,'--product-id','coke'],options);
+ const report=JSON.parse(fs.readFileSync(path.join(temp,'.local/food-api/report.json'),'utf8'));assert.deepEqual(report.results.map(x=>x.status),['candidate','pending']);assert(!JSON.stringify(report).includes(key));assert.equal(JSON.parse(fs.readFileSync(path.join(temp,'public/data/drinks.json'),'utf8')).drinks.length,0);
+ await assert.rejects(main(['collect','--name',target.name],{...options,key:''}));
+ await assert.rejects(main(['collect','--name',target.name],{...options,fetchImpl:async()=>({ok:true,json:async()=>({header:{resultCode:'00'},body:{items:[{...row,SUB_REF_NAME:key}],totalCount:1}})})}));
+ assert.deepEqual(JSON.parse(fs.readFileSync(path.join(temp,'.local/food-api/report.json'),'utf8')),report);
+ await assert.rejects(main(['publish','--food-code',row.FOOD_CD],options));await assert.rejects(main(['publish','--food-code','WRONG','--confirm'],options));
+ await main(['publish','--food-code',row.FOOD_CD,'--confirm'],options);let published=JSON.parse(fs.readFileSync(path.join(temp,'public/data/drinks.json'),'utf8'));assert.equal(published.drinks.length,1);assert.equal(published.drinks[0].foodCode,row.FOOD_CD);
+ await main(['publish','--food-code',row.FOOD_CD,'--confirm'],options);assert.equal(JSON.parse(fs.readFileSync(path.join(temp,'public/data/drinks.json'),'utf8')).drinks.length,1);
+ checkPublicSafety(path.join(temp,'public'));fs.writeFileSync(path.join(temp,'public/bad.txt'),'serviceKey=hidden');assert.throws(()=>checkPublicSafety(path.join(temp,'public')));fs.unlinkSync(path.join(temp,'public/bad.txt'));
+ assert(!messages.join('\n').includes(key));
+}finally{console.log=log;const resolved=path.resolve(temp);assert.equal(path.dirname(resolved),path.resolve(os.tmpdir()));assert(path.basename(resolved).startsWith('drinkmap-food-api-'));fs.rmSync(resolved,{recursive:true,force:true});}
+console.log('식품 API 검사 통과: 공식 필드·미확인·제품 식별·기준량·페이지·오류·후보 검토/등록·키 노출 차단');

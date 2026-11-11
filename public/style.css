@@ -118,3 +118,4 @@ header nav a:focus-visible .title-highlight::before,header nav button:focus-visi
 body{letter-spacing:var(--tracking-body)}
 button,input,select{letter-spacing:inherit}
 .detail-title h2,.detail-title button{word-break:keep-all}
+.source-box{overflow-wrap:anywhere}
