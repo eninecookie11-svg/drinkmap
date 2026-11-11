@@ -1,0 +1,19 @@
+{
+  "name": "drinkmap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "test": "node tests/check.mjs && node tests/search.mjs",
+    "test:browser": "node tests/browser.mjs && node tests/refinement.mjs",
+    "deploy": "npx wrangler pages deploy dist --project-name drinkmap"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.1.0",
+    "@playwright/test": "^1.65.0",
+    "pdfjs-dist": "^6.5.438"
+  }
+}

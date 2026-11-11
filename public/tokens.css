@@ -1,0 +1,5 @@
+﻿:root{--paper:#f7f8f2;--white:#fff;--ink:#203a31;--muted:#69766c;--line:#dce2d7;--lime:#d6f363;--lime-soft:#edf5d9;--green:#35694b;--amber:#8a602c;--amber-soft:#fcf3e5;--red:#b43831;--shadow:0 18px 50px #18392a12;--font:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;--text-xs:.72rem;--text-sm:.82rem;--text-base:.94rem;--text-lg:1.15rem;--text-xl:1.55rem;--text-2xl:2.3rem;--text-hero:clamp(2.2rem,3.3vw,3.55rem);--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-7:32px;--space-8:40px;--space-9:48px;--space-10:64px;--space-11:80px;--radius:16px;--radius-sm:8px;--max:1240px;--ease:180ms ease}
+/* Search-first layout. Shared sizing lives in tokens.css. */
+:root{--header-logo-size:1.9rem;--header-nav-size:1.1rem;--search-title-size:2rem;--search-height:68px;--touch-target:44px;--search-width:800px;--search-shadow:0 5px 0 var(--lime-soft)}
+@media(max-width:760px){:root{--header-logo-size:1.65rem;--header-nav-size:1rem;--search-title-size:1.55rem;--search-height:60px}}
+@media(max-width:360px){:root{--header-nav-size:.94rem}}

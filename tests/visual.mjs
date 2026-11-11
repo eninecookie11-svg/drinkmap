@@ -1,0 +1,10 @@
+﻿import { chromium } from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1100},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:4173');await page.locator('.product-card').first().waitFor();fs.mkdirSync('test-results',{recursive:true});await page.screenshot({path:'test-results/desktop.png',fullPage:true});
+await page.locator('[data-product=coke]').first().click();await page.screenshot({path:'test-results/detail.png'});
+console.log('desktop overflow',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+await page.locator('[data-close]').click();await page.setViewportSize({width:390,height:844});await page.screenshot({path:'test-results/mobile.png',fullPage:true});
+console.log('mobile overflow',await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));console.log('errors',errors);await browser.close();

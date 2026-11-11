@@ -1,0 +1,23 @@
+﻿{
+  "id": "new-drink",
+  "name": "새 제품의 정식 이름",
+  "brand": "브랜드명",
+  "type": "과일 탄산",
+  "volume": 355,
+  "flavor": "맛 이름",
+  "color": "#168261",
+  "kcal": null,
+  "caffeine": null,
+  "caffeineStatus": "미확인",
+  "sugar": null,
+  "sweeteners": [],
+  "ingredients": null,
+  "allergens": null,
+  "carbs": null,
+  "sodium": null,
+  "status": "현재 판매 여부 미확인",
+  "image": "assets/chilsung.svg",
+  "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+  "historicalPrice": null,
+  "source": null
+}
