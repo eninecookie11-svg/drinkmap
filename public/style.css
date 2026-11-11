@@ -77,6 +77,7 @@ html{font-size:var(--root-font-size)}
  .detail-art small{word-break:keep-all}
 }
 /* Navigation feedback and compact native sorting control. */
+.title-highlight{background-image:linear-gradient(var(--title-band-color),var(--title-band-color));background-repeat:no-repeat;background-size:100% var(--title-band-height);background-position:left calc(100% - var(--title-band-offset));-webkit-box-decoration-break:clone;box-decoration-break:clone}
 #search::placeholder{color:var(--placeholder-color);opacity:1}
 .hero .search .search-icon{display:flex;align-items:center;justify-content:center;flex-shrink:0;padding-inline:var(--space-2);line-height:1}
 .search-icon svg{display:block;width:var(--search-icon-size);height:var(--search-icon-size)}
