@@ -11,4 +11,4 @@
 :root{--title-band-color:color-mix(in srgb,var(--lime) 26%,transparent);--title-band-height:.46em;--title-band-offset:.08em}
 @media(max-width:760px){:root{--sort-width:112px;--card-footer-height:144px}}
 
-:root{--title-band-shift-x:.12em;--title-band-shift-y:.12em;--nav-hover-scale:1.04;--nav-band-hover-drop:.12em}
+:root{--title-band-shift-x:1em;--title-band-shift-y:.12em;--nav-hover-scale:1.04;--nav-band-hover-drop:.24em}
