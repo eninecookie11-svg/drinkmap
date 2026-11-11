@@ -119,3 +119,27 @@ body{letter-spacing:var(--tracking-body)}
 button,input,select{letter-spacing:inherit}
 .detail-title h2,.detail-title button{word-break:keep-all}
 .source-box{overflow-wrap:anywhere}
+.card-disclaimer{font-size:var(--text-xs);color:var(--muted);line-height:1.6;margin-top:var(--space-4);word-break:keep-all}
+.survey-method{margin-top:var(--space-5);padding:var(--space-4);border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--white);font-size:var(--text-sm)}
+.survey-method summary{cursor:pointer;font-weight:700;min-height:var(--touch-target);display:flex;align-items:center}
+.survey-method summary::after{content:"⌄";margin-left:auto;padding-left:var(--space-2)}.survey-method[open] summary::after{content:"⌃"}
+.survey-method summary:focus-visible{outline:2px solid var(--ink);outline-offset:var(--space-1)}
+.survey-sources{padding-left:var(--space-5);font-size:var(--text-xs);overflow-wrap:anywhere}.survey-sources a{text-decoration:underline;text-underline-offset:var(--space-1)}
+.topics{flex-wrap:wrap;overflow:visible;margin-right:0;margin-bottom:var(--space-2)}
+.topics button{min-height:var(--touch-target)}
+.topic-note{font-size:var(--text-xs);margin-bottom:var(--space-5)}
+#catalog-title{scroll-margin-top:var(--catalog-scroll-offset)}
+#catalog-title:focus-visible{outline:2px solid var(--ink);outline-offset:var(--space-2)}
+#catalog{scroll-margin-top:var(--catalog-scroll-offset)}
+@media(max-width:760px){
+ .hero{padding-block:var(--space-2)}
+ .hero .search{margin-top:var(--space-2)}
+ .search-meta{min-height:var(--space-6)}
+ .catalog{padding-top:var(--space-2)}
+ .catalog .section-heading{margin-bottom:var(--space-2)}
+ .topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin-right:0;padding-bottom:0}
+ .topics button{padding:var(--space-2) var(--space-1)}
+ .topic-note{font-size:var(--text-caption);margin-bottom:var(--space-2)}
+ .data-notice{margin-top:var(--space-2);margin-bottom:var(--space-3)}
+ .filter-panel{margin-bottom:var(--space-3)}
+}

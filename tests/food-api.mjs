@@ -8,8 +8,8 @@ import {diagnose} from '../scripts/lib/food-diagnose.mjs';
 import {classify,verifiedRecord,number,quantity,buildURL,parseResponse,collect,NUTRIENTS,httpError} from '../scripts/lib/food-api.mjs';
 import {applyDrinks,validateDrinks,nutritionBasis,nutrient} from '../public/nutrition.js';
 // Synthetic contract fixture, never published as real product information.
-const target={productId:'coke',name:'테스트 제로',manufacturer:'테스트 제조사',volumeMl:355};
-const row={FOOD_CD:'TEST-ONLY',FOOD_NM_KR:target.name,MAKER_NM:target.manufacturer,DB_CLASS_NM:'상용제품',Z10500:'355ml',SERVING_SIZE:'100g',AMT_NUM1:'0',AMT_NUM3:'-',AMT_NUM4:'0',AMT_NUM6:'0.5',AMT_NUM7:'',AMT_NUM13:'12',SUB_REF_NAME:'테스트 출처',RESEARCH_YMD:'20250101',UPDATE_DATE:'2025-02-02'};
+const target={productId:'coke',name:'테스트 제로',manufacturer:'테스트 제조사',volumeMl:350};
+const row={FOOD_CD:'TEST-ONLY',FOOD_NM_KR:target.name,MAKER_NM:target.manufacturer,DB_CLASS_NM:'상용제품',Z10500:'350ml',SERVING_SIZE:'100g',AMT_NUM1:'0',AMT_NUM3:'-',AMT_NUM4:'0',AMT_NUM6:'0.5',AMT_NUM7:'',AMT_NUM13:'12',SUB_REF_NAME:'테스트 출처',RESEARCH_YMD:'20250101',UPDATE_DATE:'2025-02-02'};
 const checked='2026-11-11';
 assert.deepEqual(NUTRIENTS,{kcal:'AMT_NUM1',protein:'AMT_NUM3',fat:'AMT_NUM4',carbs:'AMT_NUM6',sugar:'AMT_NUM7',sodium:'AMT_NUM13'});
 for(const raw of [null,undefined,'',' ','-','미확인','불검출','<0.5','0.1 미만','12mg','1,2',-1,Infinity])assert.equal(number(raw),null);
@@ -37,7 +37,7 @@ for(const change of [r=>r.volumeMl=500,r=>r.basis.unit='ml',r=>r.nutrients.sodiu
 assert.throws(()=>validateDrinks({...data,drinks:[record,record]},products));
 validateDrinks(JSON.parse(fs.readFileSync('public/data/drinks.json','utf8')),products);
 checkPublicSafety();
-const separate=structuredClone(data);separate.drinks[0].separateVerification.caffeine={value:0,volumeMl:355,source:{title:'테스트 포장',url:'https://example.org/package',checked,scope:'동일 제품·용량의 무카페인 표시 확인 (테스트)'}};assert.equal(applyDrinks(products,separate)[0].caffeine,0);
+const separate=structuredClone(data);separate.drinks[0].separateVerification.caffeine={value:0,volumeMl:350,source:{title:'테스트 포장',url:'https://example.org/package',checked,scope:'동일 제품·용량의 무카페인 표시 확인 (테스트)'}};assert.equal(applyDrinks(products,separate)[0].caffeine,0);
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'drinkmap-food-api-'));const log=console.log;const messages=[];
 try{
  fs.mkdirSync(path.join(temp,'public/data'),{recursive:true});fs.writeFileSync(path.join(temp,'public/data/products.json'),JSON.stringify(products));fs.writeFileSync(path.join(temp,'public/data/drinks.json'),'{"schemaVersion":1,"drinks":[]}');

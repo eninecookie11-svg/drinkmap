@@ -1,53 +1,5 @@
 [
   {
-    "id": "coke",
-    "name": "코카콜라 제로",
-    "brand": "코카-콜라음료",
-    "type": "콜라",
-    "volume": 355,
-    "flavor": "콜라",
-    "color": "#e73230",
-    "kcal": 2,
-    "caffeine": 36,
-    "caffeineStatus": "함유",
-    "sugar": "불검출",
-    "sweeteners": [
-      [
-        "아세설팜칼륨",
-        36,
-        "mg"
-      ],
-      [
-        "수크랄로스",
-        82,
-        "mg"
-      ]
-    ],
-    "ingredients": null,
-    "allergens": null,
-    "carbs": null,
-    "sodium": null,
-    "status": "현재 판매 여부 미확인",
-    "image": "assets/coke.svg",
-    "imageType": "제품 구분용 일러스트",
-    "historicalPrice": {
-      "regular": 2000,
-      "sale": null,
-      "shipping": null,
-      "quantity": 1,
-      "seller": "편의점·마트 (개별 점포 미공개)",
-      "date": "2024-06",
-      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
-    },
-    "source": {
-      "title": "한국소비자원 제로음료 품질비교시험",
-      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
-      "published": "2024-08-01",
-      "checked": "2026-11-11",
-      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
-    }
-  },
-  {
     "id": "pepsi",
     "name": "펩시 제로슈거 라임",
     "brand": "롯데칠성음료",
@@ -115,6 +67,62 @@
     }
   },
   {
+    "id": "coke",
+    "name": "코카콜라 제로",
+    "brand": "코카-콜라음료",
+    "type": "콜라",
+    "volume": 350,
+    "flavor": "콜라",
+    "color": "#e73230",
+    "kcal": 0,
+    "caffeine": 34,
+    "caffeineStatus": "함유 · 사용자 제공 검색값",
+    "sugar": "0g",
+    "sweeteners": [
+      [
+        "아스파탐",
+        null,
+        "mg"
+      ],
+      [
+        "아세설팜칼륨",
+        null,
+        "mg"
+      ]
+    ],
+    "ingredients": "정제수, 이산화탄소, 카라멜색소IV, 인산, 아스파탐(감미료), 천연향료, 아세설팜칼륨(감미료), 구연산삼나트륨, 카페인(향미증진제)",
+    "allergens": null,
+    "carbs": 0,
+    "sodium": 22,
+    "status": "현재 판매 여부 미확인",
+    "image": "assets/coke.svg",
+    "imageType": "제품 구분용 일러스트",
+    "historicalPrice": null,
+    "source": {
+      "title": "코카-콜라 제로 350ml · 사용자 제공 표시 이미지",
+      "url": null,
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "사용자 제공 이미지에 표시된 코카-콜라 제로 350ml 한 캔 영양정보·원재료명 기준. 이미지 게시일·구매 시점·품목제조보고번호·현재 배합은 미확인. 감미료 2종과 카페인 사용은 확인되나 함량은 미표시. 기존 355ml 시험값·가격은 적용하지 않음.",
+      "evidenceType": "user-provided-label-image"
+    },
+    "protein": 0,
+    "fat": 0,
+    "nutritionBasis": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "caffeineApproximate": true,
+    "caffeineSource": {
+      "title": "사용자 제공 인터넷 검색값 · 원문 출처 미확인",
+      "url": null,
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "사용자가 코카콜라 제로 350ml 한 캔의 카페인을 약 34mg으로 지정. 원문 링크·산출 근거·현재 제품 일치는 미확인이며 실제 함량과 다를 수 있음.",
+      "evidenceType": "unverified-user-search"
+    }
+  },
+  {
     "id": "chilsung",
     "name": "칠성사이다 제로",
     "brand": "롯데칠성음료",
@@ -152,6 +160,102 @@
     "imageType": "제품 구분용 일러스트",
     "historicalPrice": {
       "regular": 2000,
+      "sale": null,
+      "shipping": null,
+      "quantity": 1,
+      "seller": "편의점·마트 (개별 점포 미공개)",
+      "date": "2024-06",
+      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
+    },
+    "source": {
+      "title": "한국소비자원 제로음료 품질비교시험",
+      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
+      "published": "2024-08-01",
+      "checked": "2026-11-11",
+      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
+    }
+  },
+  {
+    "id": "narangd",
+    "name": "나랑드사이다 제로",
+    "brand": "동아오츠카",
+    "type": "사이다",
+    "volume": 345,
+    "flavor": "사이다",
+    "color": "#437ab9",
+    "kcal": 3,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "불검출",
+    "sweeteners": [
+      [
+        "아세설팜칼륨",
+        31,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        59,
+        "mg"
+      ]
+    ],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매 여부 미확인",
+    "image": "assets/narangd.svg",
+    "imageType": "제품 구분용 일러스트",
+    "historicalPrice": {
+      "regular": 1700,
+      "sale": null,
+      "shipping": null,
+      "quantity": 1,
+      "seller": "편의점·마트 (개별 점포 미공개)",
+      "date": "2024-06",
+      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
+    },
+    "source": {
+      "title": "한국소비자원 제로음료 품질비교시험",
+      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
+      "published": "2024-08-01",
+      "checked": "2026-11-11",
+      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
+    }
+  },
+  {
+    "id": "sprite",
+    "name": "스프라이트 제로",
+    "brand": "코카-콜라음료",
+    "type": "사이다",
+    "volume": 355,
+    "flavor": "레몬·라임",
+    "color": "#288b45",
+    "kcal": 3,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "불검출",
+    "sweeteners": [
+      [
+        "아세설팜칼륨",
+        57,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        96,
+        "mg"
+      ]
+    ],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매 여부 미확인",
+    "image": "assets/sprite.svg",
+    "imageType": "제품 구분용 일러스트",
+    "historicalPrice": {
+      "regular": 1700,
       "sale": null,
       "shipping": null,
       "quantity": 1,
@@ -221,54 +325,6 @@
     }
   },
   {
-    "id": "sprite",
-    "name": "스프라이트 제로",
-    "brand": "코카-콜라음료",
-    "type": "사이다",
-    "volume": 355,
-    "flavor": "레몬·라임",
-    "color": "#288b45",
-    "kcal": 3,
-    "caffeine": null,
-    "caffeineStatus": "미확인",
-    "sugar": "불검출",
-    "sweeteners": [
-      [
-        "아세설팜칼륨",
-        57,
-        "mg"
-      ],
-      [
-        "수크랄로스",
-        96,
-        "mg"
-      ]
-    ],
-    "ingredients": null,
-    "allergens": null,
-    "carbs": null,
-    "sodium": null,
-    "status": "현재 판매 여부 미확인",
-    "image": "assets/sprite.svg",
-    "imageType": "제품 구분용 일러스트",
-    "historicalPrice": {
-      "regular": 1700,
-      "sale": null,
-      "shipping": null,
-      "quantity": 1,
-      "seller": "편의점·마트 (개별 점포 미공개)",
-      "date": "2024-06",
-      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
-    },
-    "source": {
-      "title": "한국소비자원 제로음료 품질비교시험",
-      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
-      "published": "2024-08-01",
-      "checked": "2026-11-11",
-      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
-    }
-  },
-  {
     "id": "drpepper",
     "name": "닥터페퍼 제로",
     "brand": "코카-콜라음료",
@@ -298,160 +354,6 @@
     "sodium": null,
     "status": "현재 판매 여부 미확인",
     "image": "assets/drpepper.svg",
-    "imageType": "제품 구분용 일러스트",
-    "historicalPrice": {
-      "regular": 1700,
-      "sale": null,
-      "shipping": null,
-      "quantity": 1,
-      "seller": "편의점·마트 (개별 점포 미공개)",
-      "date": "2024-06",
-      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
-    },
-    "source": {
-      "title": "한국소비자원 제로음료 품질비교시험",
-      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
-      "published": "2024-08-01",
-      "checked": "2026-11-11",
-      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
-    }
-  },
-  {
-    "id": "fanta",
-    "name": "환타 제로 파인애플",
-    "brand": "코카-콜라음료",
-    "type": "과일 탄산",
-    "volume": 355,
-    "flavor": "파인애플",
-    "color": "#e9ad20",
-    "kcal": 2,
-    "caffeine": null,
-    "caffeineStatus": "미확인",
-    "sugar": "불검출",
-    "sweeteners": [
-      [
-        "아세설팜칼륨",
-        43,
-        "mg"
-      ],
-      [
-        "수크랄로스",
-        71,
-        "mg"
-      ]
-    ],
-    "ingredients": null,
-    "allergens": null,
-    "carbs": null,
-    "sodium": null,
-    "status": "현재 판매 여부 미확인",
-    "image": "assets/fanta.svg",
-    "imageType": "제품 구분용 일러스트",
-    "historicalPrice": {
-      "regular": 1500,
-      "sale": null,
-      "shipping": null,
-      "quantity": 1,
-      "seller": "편의점·마트 (개별 점포 미공개)",
-      "date": "2024-06",
-      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
-    },
-    "source": {
-      "title": "한국소비자원 제로음료 품질비교시험",
-      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
-      "published": "2024-08-01",
-      "checked": "2026-11-11",
-      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
-    }
-  },
-  {
-    "id": "tams",
-    "name": "탐스 제로 오렌지",
-    "brand": "롯데칠성음료",
-    "type": "과일 탄산",
-    "volume": 355,
-    "flavor": "오렌지",
-    "color": "#ee842f",
-    "kcal": 8,
-    "caffeine": null,
-    "caffeineStatus": "미확인",
-    "sugar": "불검출",
-    "sweeteners": [
-      [
-        "아세설팜칼륨",
-        46,
-        "mg"
-      ],
-      [
-        "수크랄로스",
-        53,
-        "mg"
-      ],
-      [
-        "알룰로스",
-        5,
-        "g"
-      ],
-      [
-        "에리스리톨",
-        1,
-        "g"
-      ]
-    ],
-    "ingredients": null,
-    "allergens": null,
-    "carbs": null,
-    "sodium": null,
-    "status": "현재 판매 여부 미확인",
-    "image": "assets/tams.svg",
-    "imageType": "제품 구분용 일러스트",
-    "historicalPrice": {
-      "regular": 1500,
-      "sale": null,
-      "shipping": null,
-      "quantity": 1,
-      "seller": "편의점·마트 (개별 점포 미공개)",
-      "date": "2024-06",
-      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
-    },
-    "source": {
-      "title": "한국소비자원 제로음료 품질비교시험",
-      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
-      "published": "2024-08-01",
-      "checked": "2026-11-11",
-      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
-    }
-  },
-  {
-    "id": "narangd",
-    "name": "나랑드사이다 제로",
-    "brand": "동아오츠카",
-    "type": "사이다",
-    "volume": 345,
-    "flavor": "사이다",
-    "color": "#437ab9",
-    "kcal": 3,
-    "caffeine": null,
-    "caffeineStatus": "미확인",
-    "sugar": "불검출",
-    "sweeteners": [
-      [
-        "아세설팜칼륨",
-        31,
-        "mg"
-      ],
-      [
-        "수크랄로스",
-        59,
-        "mg"
-      ]
-    ],
-    "ingredients": null,
-    "allergens": null,
-    "carbs": null,
-    "sodium": null,
-    "status": "현재 판매 여부 미확인",
-    "image": "assets/narangd.svg",
     "imageType": "제품 구분용 일러스트",
     "historicalPrice": {
       "regular": 1700,
@@ -522,6 +424,230 @@
       "checked": "2026-11-11",
       "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
     }
+  },
+  {
+    "id": "welchs-shine",
+    "name": "웰치스 제로 샤인머스캣",
+    "brand": "농심",
+    "type": "과일 탄산",
+    "volume": 355,
+    "flavor": "샤인머스캣",
+    "color": "#86a745",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/welchs-shine.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "농심 공식 제품 목록",
+      "url": "https://brand.nongshim.com/welchs/product/list",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "fanta",
+    "name": "환타 제로 파인애플",
+    "brand": "코카-콜라음료",
+    "type": "과일 탄산",
+    "volume": 355,
+    "flavor": "파인애플",
+    "color": "#e9ad20",
+    "kcal": 2,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "불검출",
+    "sweeteners": [
+      [
+        "아세설팜칼륨",
+        43,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        71,
+        "mg"
+      ]
+    ],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매 여부 미확인",
+    "image": "assets/fanta.svg",
+    "imageType": "제품 구분용 일러스트",
+    "historicalPrice": {
+      "regular": 1500,
+      "sale": null,
+      "shipping": null,
+      "quantity": 1,
+      "seller": "편의점·마트 (개별 점포 미공개)",
+      "date": "2024-06",
+      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
+    },
+    "source": {
+      "title": "한국소비자원 제로음료 품질비교시험",
+      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
+      "published": "2024-08-01",
+      "checked": "2026-11-11",
+      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
+    }
+  },
+  {
+    "id": "fanta-grape",
+    "name": "환타 제로 포도",
+    "brand": "코카-콜라음료",
+    "type": "과일 탄산",
+    "volume": 350,
+    "flavor": "포도",
+    "color": "#74539b",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/fanta-grape.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "GS SHOP · 환타 제로 3종 표시 이미지",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=1058874735",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "맛별 표시 이미지에 350ml가 있으나 상품 옵션에는 355ml로 혼재. 대표 용량은 이미지의 350ml 참고이며 실제 배송 용량·배합을 보증하지 않음. 영양성분·원재료는 혼동 방지를 위해 적용 보류.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "tams",
+    "name": "탐스 제로 오렌지",
+    "brand": "롯데칠성음료",
+    "type": "과일 탄산",
+    "volume": 355,
+    "flavor": "오렌지",
+    "color": "#ee842f",
+    "kcal": 8,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "불검출",
+    "sweeteners": [
+      [
+        "아세설팜칼륨",
+        46,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        53,
+        "mg"
+      ],
+      [
+        "알룰로스",
+        5,
+        "g"
+      ],
+      [
+        "에리스리톨",
+        1,
+        "g"
+      ]
+    ],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매 여부 미확인",
+    "image": "assets/tams.svg",
+    "imageType": "제품 구분용 일러스트",
+    "historicalPrice": {
+      "regular": 1500,
+      "sale": null,
+      "shipping": null,
+      "quantity": 1,
+      "seller": "편의점·마트 (개별 점포 미공개)",
+      "date": "2024-06",
+      "source": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264"
+    },
+    "source": {
+      "title": "한국소비자원 제로음료 품질비교시험",
+      "url": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003712264",
+      "published": "2024-08-01",
+      "checked": "2026-11-11",
+      "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
+    }
+  },
+  {
+    "id": "tams-pineapple",
+    "name": "탐스제로 파인애플",
+    "brand": "롯데칠성음료",
+    "type": "과일 탄산",
+    "volume": 355,
+    "flavor": "파인애플",
+    "color": "#c7a53c",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [
+      [
+        "알룰로스",
+        null,
+        "g"
+      ],
+      [
+        "소비톨",
+        null,
+        "g"
+      ],
+      [
+        "수크랄로스",
+        null,
+        "mg"
+      ],
+      [
+        "아세설팜칼륨",
+        null,
+        "mg"
+      ]
+    ],
+    "ingredients": "정제수, 액상알룰로스, 이산화탄소, 구연산, 혼합제제(글리세린, 정제수, 아라비아검, D-소비톨, 가공유지, 자당에스테르, 주정), 혼합제제(유화제, 합성향료, 라임오일), 혼합제제(유화제, 합성향료, 정제수, 오렌지오일), 구연산삼나트륨, 수크랄로스(감미료), 아세설팜칼륨(감미료), 효소초리루틴, 파인애플청징농축액, 식용색소황색제4호(착색료), 식용색소황색제5호(착색)",
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/tams-pineapple.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "동원몰 · 탐스제로 파인애플 355ml",
+      "url": "https://www.dongwonmall.com/product/detail.do?productId=003645658",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "탐스제로 파인애플 355ml 고시 원재료명 참고. 원문의 효소초리루틴 등 표기를 유지. 영양성분은 Y로만 표시되어 수치 미확인. 사과키위·오렌지 자료를 적용하지 않음. 판매 페이지 게시일·제조일·현재 배송 제품과의 일치는 미확인. 카페인·알레르기는 별도 표시가 없으면 미확인. 표시되지 않은 값은 추정하지 않음.",
+      "evidenceType": "retailer-label"
+    },
+    "nutritionBasis": {
+      "amount": 355,
+      "unit": "ml"
+    },
+    "container": "캔"
   },
   {
     "id": "mccol",
@@ -620,6 +746,547 @@
     }
   },
   {
+    "id": "pepsi-free",
+    "name": "펩시 제로슈거 라임향 제로카페인",
+    "brand": "롯데칠성음료",
+    "type": "콜라",
+    "volume": 355,
+    "flavor": "라임",
+    "color": "#a99864",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매 여부 미확인",
+    "image": "assets/pepsi-free.svg",
+    "imageType": "제품 구분용 일러스트",
+    "historicalPrice": null,
+    "source": null
+  },
+  {
+    "id": "pepsi-mojito",
+    "name": "펩시 제로슈거 모히토",
+    "brand": "롯데칠성음료",
+    "type": "콜라",
+    "volume": 355,
+    "flavor": "모히토",
+    "color": "#327f72",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/pepsi-mojito.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "뉴스핌 · 펩시코 모히토향 출시 안내",
+      "url": "https://www.newspim.com/news/view/20250331000107",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "pepsi-pineapple",
+    "name": "펩시 제로슈거 파인애플",
+    "brand": "롯데칠성음료",
+    "type": "콜라",
+    "volume": 355,
+    "flavor": "파인애플",
+    "color": "#9a963a",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/pepsi-pineapple.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "동원몰 · 펩시 제로슈거 파인애플 355ml",
+      "url": "https://www.dongwonmall.com/product/detail.do?productId=003674038",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "chilsung-lime",
+    "name": "칠성사이다 제로 라임",
+    "brand": "롯데칠성음료",
+    "type": "사이다",
+    "volume": 355,
+    "flavor": "라임",
+    "color": "#54846a",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/chilsung-lime.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "칠성몰 · 칠성사이다 제로 라임 355ml",
+      "url": "https://mall.lottechilsung.co.kr/product-detail?productNo=132029303",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "tams-apple",
+    "name": "탐스제로 사과",
+    "brand": "롯데칠성음료",
+    "type": "과일 탄산",
+    "volume": 355,
+    "flavor": "사과",
+    "color": "#699853",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/tams-apple.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "롯데ON · 탐스제로 사과 355ml",
+      "url": "https://www.lotteon.com/p/product/LE1221943760",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "판매 상품명은 사과 355ml. 다른 자료의 사과키위향과 동일 배합인지 미확인하므로 사과키위의 성분을 적용하지 않음. 제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "narangd-apple",
+    "name": "나랑드사이다 제로 그린애플",
+    "brand": "동아오츠카",
+    "type": "사이다",
+    "volume": 245,
+    "flavor": "그린애플",
+    "color": "#7c9b44",
+    "kcal": 0,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "0g",
+    "sweeteners": [
+      [
+        "알룰로스",
+        0.51,
+        "g"
+      ],
+      [
+        "아세설팜칼륨",
+        null,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        null,
+        "mg"
+      ]
+    ],
+    "ingredients": "정제수, 탄산가스, 액상알룰로오스, 향료, 사과산, 난소화성 말토덱스트린, 사과농축과즙, 구연산, 구연산삼나트륨, 정제소금, 염화칼륨, 젖산칼슘, 감미료(아세설팜칼륨, 수크랄로스)",
+    "allergens": null,
+    "carbs": 1,
+    "sodium": 50,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/narangd-apple.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "GS SHOP · 나랑드사이다 245ml 3종 표시",
+      "url": "https://m.gsshop.com/prd/prd.gs?prdid=1054612243",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "해당 맛 245ml 한 캔의 개별 표시 영양정보·원재료명 참고. 알룰로오스 표기는 알룰로스로 정규화. 판매 페이지 게시일·제조일·현재 배송 제품과의 일치는 미확인. 카페인·알레르기는 별도 표시가 없으면 미확인. 표시되지 않은 값은 추정하지 않음.",
+      "evidenceType": "retailer-label"
+    },
+    "protein": 0,
+    "fat": 0,
+    "nutritionBasis": {
+      "amount": 245,
+      "unit": "ml"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "narangd-pineapple",
+    "name": "나랑드사이다 제로 파인애플",
+    "brand": "동아오츠카",
+    "type": "사이다",
+    "volume": 245,
+    "flavor": "파인애플",
+    "color": "#bb9a43",
+    "kcal": 0,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "0g",
+    "sweeteners": [
+      [
+        "알룰로스",
+        1,
+        "g"
+      ],
+      [
+        "아세설팜칼륨",
+        null,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        null,
+        "mg"
+      ]
+    ],
+    "ingredients": "정제수, 탄산가스, 액상알룰로오스, 파인애플농축과즙, 구연산, 사과산, 구연산삼나트륨, 정제소금, 난소화성말토덱스트린, 향료, 감미료(아세설팜칼륨, 수크랄로스)",
+    "allergens": null,
+    "carbs": 1,
+    "sodium": 60,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/narangd-pineapple.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "GS SHOP · 나랑드사이다 245ml 3종 표시",
+      "url": "https://m.gsshop.com/prd/prd.gs?prdid=1054612243",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "해당 맛 245ml 한 캔의 개별 표시 영양정보·원재료명 참고. 알룰로오스 표기는 알룰로스로 정규화. 판매 페이지 게시일·제조일·현재 배송 제품과의 일치는 미확인. 카페인·알레르기는 별도 표시가 없으면 미확인. 표시되지 않은 값은 추정하지 않음.",
+      "evidenceType": "retailer-label"
+    },
+    "protein": 0,
+    "fat": 0,
+    "nutritionBasis": {
+      "amount": 245,
+      "unit": "ml"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "lipton-peach",
+    "name": "립톤 아이스티 복숭아 제로",
+    "brand": "롯데칠성음료",
+    "type": "차음료",
+    "volume": 500,
+    "flavor": "복숭아",
+    "color": "#bd795b",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [
+      [
+        "아세설팜칼륨",
+        null,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        null,
+        "mg"
+      ],
+      [
+        "스테비올배당체",
+        null,
+        "mg"
+      ]
+    ],
+    "ingredients": "정제수, 홍차추출분말(아일랜드산), DL-사과산, 구연산, 향료(복숭아향), 구연산삼나트륨, 복숭아과즙분말(아일랜드산), 비타민C, 아세설팜칼륨(감미료), 수크랄로스(감미료), 스테비올배당체(감미료)",
+    "allergens": [
+      "복숭아",
+      "밀"
+    ],
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/lipton-peach.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "SSG.COM · 립톤 제로 아이스티 복숭아 500ml",
+      "url": "https://m.ssg.com/item/itemView.ssg?itemId=0000008060350",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "국내 롯데칠성 제조 립톤 복숭아 제로 500ml 상품의 원재료·알레르기 표시만 적용. 해외 수입 립톤 및 355ml 자료와 혼합하지 않음. 영양성분·카페인 함량 미확인. 판매 페이지 게시일·제조일·현재 배송 제품과의 일치는 미확인. 카페인·알레르기는 별도 표시가 없으면 미확인. 표시되지 않은 값은 추정하지 않음.",
+      "evidenceType": "retailer-label"
+    },
+    "nutritionBasis": {
+      "amount": 500,
+      "unit": "ml"
+    },
+    "container": "병"
+  },
+  {
+    "id": "two-percent-peach",
+    "name": "2% 부족할 때 복숭아 제로",
+    "brand": "롯데칠성음료",
+    "type": "혼합음료",
+    "volume": 500,
+    "flavor": "복숭아",
+    "color": "#b4828e",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/two-percent-peach.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "이마트몰 · 이프로 복숭아 제로 500ml",
+      "url": "https://emart.ssg.com/item/itemView.ssg?itemId=1000738535896",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "병"
+  },
+  {
+    "id": "toreta-zero",
+    "name": "토레타! 제로",
+    "brand": "코카-콜라음료",
+    "type": "수분보충음료",
+    "volume": 500,
+    "flavor": "과채",
+    "color": "#589178",
+    "kcal": 4,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": "0g",
+    "sweeteners": [
+      [
+        "아세설팜칼륨",
+        null,
+        "mg"
+      ],
+      [
+        "수크랄로스",
+        null,
+        "mg"
+      ]
+    ],
+    "ingredients": "정제수, 혼합과채즙청징농축액 0.52%[정제수 50%, 야채착즙액 10%(국산/정제수50%, 당근20%, 양배추15%, 케일 15%), 청포도과즙농축액6.9%(미국산), 사과과즙농축액6.8%(중국산), 배과즙농축액6.8%(중국산), 자몽과즙농축액6.4%(미국산), 감귤과즙농축액6.3%(국산), 망고퓨레농축액5.7%(인도산), 레몬과즙농축액1.1%(아르헨티나산)], 구연산, 소금(오스트리아산), 구연산삼나트륨, 합성향료, 향료, 향료제제(향료, 식염, 젖산, 구연산), 사과산, 아세설팜칼륨(감미료), 염화칼륨, 비타민C, 수크랄로스(감미료), 프로필렌글리콜",
+    "allergens": null,
+    "carbs": 1,
+    "sodium": 271,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/toreta-zero.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "GS SHOP · 토레타 제로 500ml 표시",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=1051966763",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "GS SHOP 상품 상세의 토레타 제로 500ml 한 병 표시값 4kcal·나트륨271mg 등과 원재료 기준. 제로라는 제품명만으로 0kcal로 바꾸지 않음. 판매 페이지 게시일·제조일·현재 배송 제품과의 일치는 미확인. 카페인·알레르기는 별도 표시가 없으면 미확인. 표시되지 않은 값은 추정하지 않음.",
+      "evidenceType": "retailer-label"
+    },
+    "protein": 0,
+    "fat": 0,
+    "nutritionBasis": {
+      "amount": 500,
+      "unit": "ml"
+    },
+    "container": "병"
+  },
+  {
+    "id": "powerade-zero",
+    "name": "파워에이드 제로",
+    "brand": "코카-콜라음료",
+    "type": "스포츠음료",
+    "volume": 600,
+    "flavor": "기본",
+    "color": "#527ca4",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/powerade-zero.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "쿠팡 · 파워에이드 제로 2종 600ml 구성",
+      "url": "https://www.coupang.com/vp/products/8880002250",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "병"
+  },
+  {
+    "id": "powerade-lime",
+    "name": "파워에이드 제로 라임향",
+    "brand": "코카-콜라음료",
+    "type": "스포츠음료",
+    "volume": 600,
+    "flavor": "라임",
+    "color": "#759c51",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/powerade-lime.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "코카콜라 공식 스토어 · 파워에이드 제로 라임향 600PET",
+      "url": "https://cokeplay.cocacola.co.kr/store/main?brandMap=powerade",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "병"
+  },
+  {
+    "id": "monster-zero",
+    "name": "몬스터 에너지 제로 슈거",
+    "brand": "코카-콜라음료",
+    "type": "에너지음료",
+    "volume": 355,
+    "flavor": "오리지널",
+    "color": "#405d42",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/monster-zero.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "몬스터 공식 · 에너지 제로 슈거",
+      "url": "https://www.monsterenergy.com/ko-kr/energy-drinks/monster-energy/몬스터-에너지-제로-슈거/",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "공식 한국 페이지에서 제로슈거 제품 존재 확인. 공식 페이지의 카페인은 16 fl oz 기준이라고 표시되어 국내 355ml에 적용하지 않음. 열량·당류도 기준량 명확성 확인 전까지 보류. 355ml 구성은 국내 판매 목록 참고. 제로슈거가 0kcal를 뜻하지 않음. 제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "monster-ultra",
+    "name": "몬스터 에너지 울트라",
+    "brand": "코카-콜라음료",
+    "type": "에너지음료",
+    "volume": 355,
+    "flavor": "시트러스",
+    "color": "#818a83",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/monster-ultra.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "몬스터 공식 · 에너지 울트라",
+      "url": "https://www.monsterenergy.com/ko-kr/energy-drinks/monster-ultra/몬스터-에너지-울트라/",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "공식 한국 페이지에서 제로슈거 제품 존재 확인. 공식 페이지의 카페인은 16 fl oz 기준이라고 표시되어 국내 355ml에 적용하지 않음. 열량·당류도 기준량 명확성 확인 전까지 보류. 355ml 구성은 국내 판매 목록 참고. 제로슈거가 0kcal를 뜻하지 않음. 제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
+    "id": "monster-peach",
+    "name": "몬스터 울트라 피치 킨",
+    "brand": "코카-콜라음료",
+    "type": "에너지음료",
+    "volume": 355,
+    "flavor": "복숭아",
+    "color": "#b97b85",
+    "kcal": null,
+    "caffeine": null,
+    "caffeineStatus": "미확인",
+    "sugar": null,
+    "sweeteners": [],
+    "ingredients": null,
+    "allergens": null,
+    "carbs": null,
+    "sodium": null,
+    "status": "현재 판매·배합 확인 필요",
+    "image": "assets/monster-peach.svg",
+    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "historicalPrice": null,
+    "source": {
+      "title": "몬스터 공식 · 울트라 피치 킨",
+      "url": "https://www.monsterenergy.com/ko-kr/energy-drinks/monster-ultra/monster-energy-peachy-keen/",
+      "published": "미확인",
+      "checked": "2026-11-11",
+      "scope": "공식 한국 페이지에서 제로슈거 제품 존재 확인. 공식 페이지의 카페인은 16 fl oz 기준이라고 표시되어 국내 355ml에 적용하지 않음. 열량·당류도 기준량 명확성 확인 전까지 보류. 355ml 구성은 국내 판매 목록 참고. 제로슈거가 0kcal를 뜻하지 않음. 제품명·대표 용량 참고 자료. 영양성분·전체 원재료·감미료·카페인 함량·알레르기·현재 배합은 확인 전까지 미확인. 다른 맛·용량의 수치를 옮기지 않음.",
+      "evidenceType": "product-reference"
+    },
+    "container": "캔"
+  },
+  {
     "id": "miero",
     "name": "미에로화이바 스파클링 제로",
     "brand": "현대약품",
@@ -714,28 +1381,5 @@
       "checked": "2026-11-11",
       "scope": "2024년 시험 제품 기준. 현재 배합·판매 여부는 미확인."
     }
-  },
-  {
-    "id": "pepsi-free",
-    "name": "펩시 제로슈거 라임향 제로카페인",
-    "brand": "롯데칠성음료",
-    "type": "콜라",
-    "volume": 355,
-    "flavor": "라임",
-    "color": "#a99864",
-    "kcal": null,
-    "caffeine": null,
-    "caffeineStatus": "미확인",
-    "sugar": null,
-    "sweeteners": [],
-    "ingredients": null,
-    "allergens": null,
-    "carbs": null,
-    "sodium": null,
-    "status": "현재 판매 여부 미확인",
-    "image": "assets/pepsi-free.svg",
-    "imageType": "제품 구분용 일러스트",
-    "historicalPrice": null,
-    "source": null
   }
 ]
