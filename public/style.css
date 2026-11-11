@@ -64,6 +64,7 @@ header nav a,header nav button{font-size:var(--header-nav-size);min-height:var(-
 }
 
 /* Keep product facts readable at every viewport. */
+html{font-size:var(--root-font-size)}
 .tag,.brand,.card-bottom>span,.compare-toggle,.volume,.detail-art small,.stat span{font-size:var(--text-xs)}
 .card-info h3{font-size:var(--text-base)}
 .card-bottom{flex-wrap:wrap;gap:var(--space-2)}
@@ -74,4 +75,24 @@ header nav a,header nav button{font-size:var(--header-nav-size);min-height:var(-
  .results-bar label{display:flex;align-items:center;gap:var(--space-2);margin-left:auto}
  .hero .search input{font-size:var(--text-sm)}
  .detail-art small{word-break:keep-all}
+}
+/* Navigation feedback and compact native sorting control. */
+header nav a,header nav button{position:relative;transition:color var(--ease)}
+header nav a::after,header nav button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:var(--nav-underline-height);background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform var(--ease)}
+header nav a:hover,header nav button:hover{color:var(--ink)}
+header nav a:hover::after,header nav button:hover::after,header nav a:focus-visible::after,header nav button:focus-visible::after{transform:scaleX(1)}
+.results-bar label{display:flex;align-items:center;gap:var(--space-3)}
+.results-bar select{width:var(--sort-width);max-width:var(--sort-width);min-width:0;padding:var(--space-2);border-radius:var(--radius-sm)}
+.results-bar select:focus{outline:var(--sort-focus-width) solid var(--ink);outline-offset:calc(-1 * var(--sort-focus-width));background:var(--white)}
+/* Every card reserves the same space for its source and comparison action. */
+.product-card{display:flex;flex-direction:column}
+.card-main{display:flex;flex-direction:column;flex:1}
+.card-info{flex:1}
+.card-bottom{margin-top:auto;min-height:var(--card-footer-height);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--card-footer-gap);align-items:center}
+.card-bottom>span{font-size:var(--card-source-size);line-height:1.5;word-break:keep-all}
+.card-bottom .compare-toggle{white-space:nowrap}
+@media(max-width:760px){
+ .results-bar label{gap:var(--space-2)}
+ .card-bottom{grid-template-columns:minmax(0,1fr);grid-template-rows:1fr auto;align-items:center}
+ .card-bottom .compare-toggle{justify-self:start;min-height:var(--touch-target)}
 }
