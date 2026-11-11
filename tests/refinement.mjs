@@ -12,9 +12,9 @@ assert.equal(await page.locator('header .logo-mark, header .wordmark, header [da
 assert(await page.locator('header nav button').first().evaluate(x=>parseFloat(getComputedStyle(x).fontSize)>=17));
 await page.locator('#search').fill('코카콜라');assert.deepEqual(await page.locator('.card-info h3').allTextContents(),['코카콜라 제로']);assert((await page.locator('#search-feedback').innerText()).includes('1개'));
 await page.locator('#search').fill('코카-콜라음료');assert.equal(await page.locator('.product-card').count(),11);
-await page.locator('#search').fill('롯데칠성음료');assert.equal(await page.locator('.product-card').count(),12);
-await page.locator('#clear-search').click();assert.equal(await page.locator('.product-card').count(),32);assert.equal(await page.locator('#search').inputValue(),'');
-await page.locator('#search').fill('수크랄로스');assert.equal(await page.locator('.product-card').count(),18);
+await page.locator('#search').fill('롯데칠성음료');assert.equal(await page.locator('.product-card').count(),9);
+await page.locator('#clear-search').click();assert.equal(await page.locator('.product-card').count(),28);assert.equal(await page.locator('#search').inputValue(),'');
+await page.locator('#search').fill('수크랄로스');assert.equal(await page.locator('.product-card').count(),27);
 await page.locator('#clear-search').click();
 await page.screenshot({path:'test-results/review-after-pc.png'});
 for(const width of [390,320,768]){
@@ -24,7 +24,7 @@ if(width<=760){
 assert.equal(await page.locator('.filter-panel').getAttribute('open'),null);
 assert(await page.locator('.product-card').first().evaluate(x=>x.getBoundingClientRect().top<window.innerHeight),'첫 화면에 제품을 보여야 합니다');
 await page.locator('.filter-panel>summary').click();assert(await page.locator('.filters').isVisible());
-await page.locator('[name=sweet][value=아스파탐]').check();assert.equal(await page.locator('.product-card').count(),2);
+await page.locator('[name=sweet][value=아스파탐]').check();assert.equal(await page.locator('.product-card').count(),3);
 await page.locator('#reset').click();await page.locator('.filter-panel>summary').click();
 for(const control of ['header nav a','header nav button','#search-form button','.filter-panel>summary']){
 assert(await page.locator(control).first().evaluate(x=>x.getBoundingClientRect().height>=44),`누르기 작은 버튼 ${control}`);

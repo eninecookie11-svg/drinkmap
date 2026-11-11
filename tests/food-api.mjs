@@ -32,12 +32,12 @@ await assert.rejects(collect({key,name:'제로',maxPages:1,fetchImpl:async()=>({
 const products=JSON.parse(fs.readFileSync('public/data/products.json','utf8'));
 const record=verifiedRecord(row,target,checked),data={schemaVersion:1,drinks:[record]};
 validateDrinks(data,products);assert.equal(record.nutrients.sugar,null);assert.equal(record.nutrients.protein,null);assert.equal(record.nutrients.kcal,0);assert.deepEqual(Object.values(record.separateVerification),[null,null,null,null]);
-const merged=applyDrinks(products,data),p=merged.find(p=>p.id==='coke');assert.equal(p.caffeine,null);assert.deepEqual(p.sweeteners,[]);assert.equal(p.ingredients,null);assert.equal(p.kcal,null);assert.equal(nutrient(p,'carbs'),0.5);assert.equal(nutritionBasis(p),'100g 기준');assert.equal(merged[1],products[1]);
+const merged=applyDrinks(products,data),p=merged.find(p=>p.id==='coke');assert.equal(p.caffeine,null);assert.deepEqual(p.sweeteners,[]);assert.equal(p.ingredients,null);assert.equal(p.kcal,null);assert.equal(nutrient(p,'carbs'),0.5);assert.equal(nutritionBasis(p),'100g 기준');assert.equal(merged.find(p=>p.id==='pepsi'),products.find(p=>p.id==='pepsi'));
 for(const change of [r=>r.volumeMl=500,r=>r.basis.unit='ml',r=>r.nutrients.sodium=-1,r=>r.source.url+='?serviceKey=bad',r=>r.source.checked='2025-02-30',r=>r.separateVerification.caffeine=0,r=>r.serviceKey=key]){const invalid=structuredClone(data);change(invalid.drinks[0]);assert.throws(()=>validateDrinks(invalid,products));}
 assert.throws(()=>validateDrinks({...data,drinks:[record,record]},products));
 validateDrinks(JSON.parse(fs.readFileSync('public/data/drinks.json','utf8')),products);
 checkPublicSafety();
-const separate=structuredClone(data);separate.drinks[0].separateVerification.caffeine={value:0,volumeMl:350,source:{title:'테스트 포장',url:'https://example.org/package',checked,scope:'동일 제품·용량의 무카페인 표시 확인 (테스트)'}};assert.equal(applyDrinks(products,separate)[0].caffeine,0);
+const separate=structuredClone(data);separate.drinks[0].separateVerification.caffeine={value:0,volumeMl:350,source:{title:'테스트 포장',url:'https://example.org/package',checked,scope:'동일 제품·용량의 무카페인 표시 확인 (테스트)'}};assert.equal(applyDrinks(products,separate).find(p=>p.id==='coke').caffeine,0);
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'drinkmap-food-api-'));const log=console.log;const messages=[];
 try{
  fs.mkdirSync(path.join(temp,'public/data'),{recursive:true});fs.writeFileSync(path.join(temp,'public/data/products.json'),JSON.stringify(products));fs.writeFileSync(path.join(temp,'public/data/drinks.json'),'{"schemaVersion":1,"drinks":[]}');

@@ -7,7 +7,7 @@
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs dist",
-    "test": "node tests/check.mjs && node tests/search.mjs && node tests/food-api.mjs && node tests/sweetener-order.mjs",
+    "test": "node tests/check.mjs && node tests/search.mjs && node tests/food-api.mjs && node tests/sweetener-order.mjs && node tests/catalog-data.mjs",
     "test:browser": "node tests/browser.mjs && node tests/refinement.mjs && node tests/food-api-browser.mjs && node tests/catalog-navigation.mjs",
     "deploy": "npx wrangler pages deploy dist --project-name drinkmap",
     "food:collect": "node scripts/collect-food.mjs collect",

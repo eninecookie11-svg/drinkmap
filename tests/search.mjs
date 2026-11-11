@@ -7,11 +7,11 @@ assert.deepEqual(ids('코카콜라'),['coke']);
 assert.deepEqual(ids('코카-콜라'),['coke']);
 assert.deepEqual(ids(' 코카 콜라 제로 '),['coke']);
 assert.deepEqual(ids('스프라이트'),['sprite']);
-assert.deepEqual(ids('펩시'),['pepsi','pepsi-free','pepsi-mojito','pepsi-pineapple']);
+assert.deepEqual(ids('펩시'),['pepsi','pepsi-free']);
 assert.deepEqual(ids('펩시 제로슈거 라임'),['pepsi']);
-assert.deepEqual(ids('롯데칠성음료'),['pepsi','chilsung','milkis','tams','tams-pineapple','pepsi-free','pepsi-mojito','pepsi-pineapple','chilsung-lime','tams-apple','lipton-peach','two-percent-peach']);
+assert.deepEqual(ids('롯데칠성음료'),['pepsi','chilsung','milkis','tams-pineapple','pepsi-free','chilsung-lime','tams-apple','lipton-peach','two-percent-peach']);
 assert.deepEqual(ids('코카-콜라음료'),['coke','sprite','drpepper','fanta','fanta-grape','toreta-zero','powerade-zero','powerade-lime','monster-zero','monster-ultra','monster-peach']);
-assert.equal(ids('수크랄로스').length,18);
+assert.equal(ids('수크랄로스').length,27);
 assert.deepEqual(ids('코카콜라 딸기'),[]);
 assert.equal(ids('  ').length,products.length);
 // Guard ambiguity even if a future manufacturer exactly shares a product name.
