@@ -7,7 +7,7 @@
 :root{--search-button-padding:22px;--text-caption:.8rem}
 @media(max-width:760px){:root{--search-button-padding:14px}}
 :root{--root-font-size:17px;--sort-width:148px;--sort-focus-width:2px;--card-footer-height:72px;--card-source-size:.85rem;--card-footer-gap:8px}
-:root{--placeholder-color:color-mix(in srgb,var(--muted) 70%,var(--white));--search-icon-size:26px}
+:root{--placeholder-color:color-mix(in srgb,var(--muted) 50%,var(--white));--search-icon-size:26px}
 :root{--title-band-color:color-mix(in srgb,var(--lime) 26%,transparent);--title-band-height:.46em;--title-band-offset:.08em}
 @media(max-width:760px){:root{--sort-width:112px;--card-footer-height:144px}}
 
