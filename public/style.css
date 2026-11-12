@@ -107,7 +107,7 @@ header nav a:focus-visible .title-highlight::before,header nav button:focus-visi
 .card-main{display:flex;flex-direction:column;flex:1}
 .card-info{flex:1}
 .card-bottom{margin-top:auto;min-height:var(--card-footer-height);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--card-footer-gap);align-items:center}
-.card-bottom>span{font-size:var(--card-source-size);line-height:1.5;word-break:keep-all}
+
 .card-bottom .compare-toggle{white-space:nowrap}
 @media(max-width:760px){
  .results-bar label{gap:var(--space-2)}
@@ -170,3 +170,7 @@ header .logo{flex-shrink:0}
 .filters select:focus,.filters select:focus-visible{outline:none}
 
 .card-art .volume{display:inline-flex;align-items:center;justify-content:center;width:var(--volume-tag-width);height:var(--volume-tag-height);border-radius:var(--volume-tag-radius);background:var(--volume-tag-background);color:var(--volume-tag-color);font-size:var(--text-caption);line-height:1;white-space:nowrap;z-index:2}
+
+
+
+.card-bottom{grid-template-columns:1fr;grid-template-rows:auto;min-height:var(--card-footer-height);justify-items:end}
