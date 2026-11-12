@@ -162,3 +162,7 @@ button,input,select{letter-spacing:inherit}
 
 header .logo{flex-shrink:0}
 .header-logo,.footer-logo{display:block;width:var(--header-logo-width);height:var(--header-logo-height);object-fit:cover;object-position:center}
+
+.footer-tagline{text-align:left;padding-left:calc(var(--header-logo-width) * var(--logo-art-inset));word-break:keep-all}
+
+.recent [data-clear-recent]{margin-left:var(--recent-clear-gap)}
