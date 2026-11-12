@@ -168,3 +168,5 @@ header .logo{flex-shrink:0}
 .recent [data-clear-recent]{margin-left:var(--recent-clear-gap)}
 
 .filters select:focus,.filters select:focus-visible{outline:none}
+
+.card-art .volume{display:inline-flex;align-items:center;justify-content:center;width:var(--volume-tag-width);height:var(--volume-tag-height);border-radius:var(--volume-tag-radius);background:var(--volume-tag-background);color:var(--volume-tag-color);font-size:var(--text-caption);line-height:1;white-space:nowrap;z-index:2}

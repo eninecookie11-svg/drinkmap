@@ -24,3 +24,5 @@
 :root{--logo-art-inset:.04}
 
 :root{--recent-clear-gap:1em}
+
+:root{--volume-tag-width:76px;--volume-tag-height:28px;--volume-tag-radius:var(--radius-sm);--volume-tag-background:var(--paper);--volume-tag-color:var(--ink)}
