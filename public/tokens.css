@@ -17,3 +17,6 @@
 :root{--tracking-body:.015em;--tracking-heading:-.015em;--tracking-logo:-.025em}
 :root{--catalog-scroll-offset:var(--space-7)}
 :root{--ad-rail-space:200px;--ad-rail-width:160px;--ad-rail-top:180px;--ad-rail-height:600px;--ad-content-shift:calc((100vw - var(--ad-rail-space) - min(100vw - var(--ad-rail-space),var(--max)))/4 + (var(--ad-rail-space) - var(--space-5) - var(--ad-rail-width) + var(--space-7))/2)}
+
+:root{--header-logo-width:200px;--header-logo-height:48px}
+@media(max-width:760px){:root{--header-logo-width:180px;--header-logo-height:44px}}

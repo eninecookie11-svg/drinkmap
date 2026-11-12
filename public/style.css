@@ -159,3 +159,6 @@ button,input,select{letter-spacing:inherit}
 
 @media(max-width:360px){.topic-spacer{height:2lh}}
 
+
+header .logo{flex-shrink:0}
+.header-logo,.footer-logo{display:block;width:var(--header-logo-width);height:var(--header-logo-height);object-fit:cover;object-position:center}
