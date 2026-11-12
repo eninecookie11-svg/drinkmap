@@ -5,6 +5,7 @@ import '../tests/search.mjs';
 import '../tests/food-api.mjs';
 import '../tests/sweetener-order.mjs';
 import '../tests/catalog-data.mjs';
+import './rss.mjs';
 checkPublicSafety();
 // Cloudflare path rules must start with a path, without a UTF-8 BOM.
 for(const name of ['_headers','_redirects']){

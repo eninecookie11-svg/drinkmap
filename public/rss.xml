@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>드링크맵 · 제로음료 도감</title>
+    <link>https://drinkmap.pages.dev/</link>
+    <description>알고 마시는 한 캔, 달콤함 뒤의 정보까지. 드링크맵에 등록된 제로음료를 살펴보세요.</description>
+    <language>ko</language>
+    <atom:link href="https://drinkmap.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>펩시 제로슈거 라임 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/pepsi</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/pepsi</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 아스파탐. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>아스파탐</category>
+    </item>
+    <item>
+      <title>코카콜라 제로 350ml</title>
+      <link>https://drinkmap.pages.dev/#product/coke</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/coke</guid>
+      <description>코카-콜라음료 · 350ml. 감미료: 아세설팜칼륨 · 아스파탐. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>아세설팜칼륨</category>
+      <category>아스파탐</category>
+    </item>
+    <item>
+      <title>칠성사이다 제로 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/chilsung</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/chilsung</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 알룰로스 · 스테비올배당체 · 에리스리톨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>알룰로스</category>
+      <category>스테비올배당체</category>
+      <category>에리스리톨</category>
+    </item>
+    <item>
+      <title>나랑드사이다 제로 345ml</title>
+      <link>https://drinkmap.pages.dev/#product/narangd</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/narangd</guid>
+      <description>동아오츠카 · 345ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>스프라이트 제로 350ml</title>
+      <link>https://drinkmap.pages.dev/#product/sprite</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/sprite</guid>
+      <description>코카-콜라음료 · 350ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>밀키스 제로 250ml</title>
+      <link>https://drinkmap.pages.dev/#product/milkis</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/milkis</guid>
+      <description>롯데칠성음료 · 250ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 알룰로스. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>알룰로스</category>
+    </item>
+    <item>
+      <title>닥터페퍼 제로 350ml</title>
+      <link>https://drinkmap.pages.dev/#product/drpepper</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/drpepper</guid>
+      <description>코카-콜라음료 · 350ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>웰치스 제로 그레이프 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/welchs</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/welchs</guid>
+      <description>농심 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 알룰로스. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>알룰로스</category>
+    </item>
+    <item>
+      <title>웰치스 제로 샤인머스캣 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/welchs-shine</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/welchs-shine</guid>
+      <description>농심 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 알룰로스. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>알룰로스</category>
+    </item>
+    <item>
+      <title>환타 제로 파인애플 350ml</title>
+      <link>https://drinkmap.pages.dev/#product/fanta</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/fanta</guid>
+      <description>코카-콜라음료 · 350ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 효소처리스테비아. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>효소처리스테비아</category>
+    </item>
+    <item>
+      <title>환타 제로 포도 350ml</title>
+      <link>https://drinkmap.pages.dev/#product/fanta-grape</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/fanta-grape</guid>
+      <description>코카-콜라음료 · 350ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>탐스제로 파인애플 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/tams-pineapple</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/tams-pineapple</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 알룰로스 · 스테비올배당체 · 에리스리톨 · 소비톨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>알룰로스</category>
+      <category>스테비올배당체</category>
+      <category>에리스리톨</category>
+      <category>소비톨</category>
+    </item>
+    <item>
+      <title>맥콜 제로 250ml</title>
+      <link>https://drinkmap.pages.dev/#product/mccol</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/mccol</guid>
+      <description>일화 · 250ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>갈배 사이다 제로 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/galbae</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/galbae</guid>
+      <description>해태에이치티비 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>펩시 제로슈거 라임향 제로카페인 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/pepsi-free</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/pepsi-free</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 아스파탐. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>아스파탐</category>
+    </item>
+    <item>
+      <title>칠성사이다 제로 라임 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/chilsung-lime</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/chilsung-lime</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 알룰로스 · 스테비올배당체 · 에리스리톨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>알룰로스</category>
+      <category>스테비올배당체</category>
+      <category>에리스리톨</category>
+    </item>
+    <item>
+      <title>탐스제로 사과 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/tams-apple</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/tams-apple</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 알룰로스 · 스테비올배당체 · 에리스리톨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>알룰로스</category>
+      <category>스테비올배당체</category>
+      <category>에리스리톨</category>
+    </item>
+    <item>
+      <title>나랑드사이다 제로 그린애플 245ml</title>
+      <link>https://drinkmap.pages.dev/#product/narangd-apple</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/narangd-apple</guid>
+      <description>동아오츠카 · 245ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 알룰로스. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>알룰로스</category>
+    </item>
+    <item>
+      <title>나랑드사이다 제로 파인애플 245ml</title>
+      <link>https://drinkmap.pages.dev/#product/narangd-pineapple</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/narangd-pineapple</guid>
+      <description>동아오츠카 · 245ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 알룰로스. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>알룰로스</category>
+    </item>
+    <item>
+      <title>립톤 아이스티 복숭아 제로 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/lipton-peach</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/lipton-peach</guid>
+      <description>롯데칠성음료 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 스테비올배당체. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>스테비올배당체</category>
+    </item>
+    <item>
+      <title>2% 부족할 때 복숭아 제로 240ml</title>
+      <link>https://drinkmap.pages.dev/#product/two-percent-peach</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/two-percent-peach</guid>
+      <description>롯데칠성음료 · 240ml. 감미료: 수크랄로스 · 에리스리톨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>에리스리톨</category>
+    </item>
+    <item>
+      <title>토레타! 제로 500ml</title>
+      <link>https://drinkmap.pages.dev/#product/toreta-zero</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/toreta-zero</guid>
+      <description>코카-콜라음료 · 500ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>파워에이드 제로 600ml</title>
+      <link>https://drinkmap.pages.dev/#product/powerade-zero</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/powerade-zero</guid>
+      <description>코카-콜라음료 · 600ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>파워에이드 제로 라임향 600ml</title>
+      <link>https://drinkmap.pages.dev/#product/powerade-lime</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/powerade-lime</guid>
+      <description>코카-콜라음료 · 600ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>몬스터 에너지 제로 슈거 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/monster-zero</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/monster-zero</guid>
+      <description>코카-콜라음료 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+    </item>
+    <item>
+      <title>몬스터 에너지 울트라 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/monster-ultra</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/monster-ultra</guid>
+      <description>코카-콜라음료 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 에리스리톨. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>에리스리톨</category>
+    </item>
+    <item>
+      <title>몬스터 울트라 피치 킨 355ml</title>
+      <link>https://drinkmap.pages.dev/#product/monster-peach</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/monster-peach</guid>
+      <description>코카-콜라음료 · 355ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 스테비올배당체. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>스테비올배당체</category>
+    </item>
+    <item>
+      <title>미에로화이바 스파클링 제로 슈가 250ml</title>
+      <link>https://drinkmap.pages.dev/#product/miero</link>
+      <guid isPermaLink="true">https://drinkmap.pages.dev/#product/miero</guid>
+      <description>현대약품 · 250ml. 감미료: 수크랄로스 · 아세설팜칼륨 · 스테비올배당체. 카페인·영양정보와 출처는 제품 상세에서 확인하세요. 현재 판매 제품의 표시와 다를 수 있어요.</description>
+      <category>수크랄로스</category>
+      <category>아세설팜칼륨</category>
+      <category>스테비올배당체</category>
+    </item>
+  </channel>
+</rss>
