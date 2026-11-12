@@ -1491,8 +1491,8 @@
     "carbs": 7,
     "sodium": 43,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/two-percent-peach.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/two-percent-peach.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "롯데칠성음료 공식 판매몰 · 사용자 제공 이프로 부족할 때 복숭아 240ml 표시 이미지",
@@ -1520,6 +1520,12 @@
     "nutritionBasis": {
       "amount": 240,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   },
   {
@@ -1551,8 +1557,8 @@
     "carbs": 1,
     "sodium": 271,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/toreta-zero.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/toreta-zero.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "코카콜라 공식 판매몰 · 사용자 제공 토레타! 제로 500ml 표시 이미지",
@@ -1580,7 +1586,13 @@
     },
     "transFat": 0,
     "saturatedFat": 0,
-    "cholesterol": 0
+    "cholesterol": 0,
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
+    }
   },
   {
     "id": "powerade-zero",
@@ -1614,8 +1626,8 @@
     "carbs": 1,
     "sodium": 357,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/powerade-zero.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/powerade-zero.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "코카콜라 공식 판매몰 · 사용자 제공 파워에이드 제로 600ml 표시 이미지",
@@ -1646,6 +1658,12 @@
     "nutritionBasis": {
       "amount": 600,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   },
   {
@@ -1679,8 +1697,8 @@
     "carbs": 1.8,
     "sodium": 345,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/powerade-lime.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/powerade-lime.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "코카콜라 공식 판매몰 · 사용자 제공 파워에이드 제로 라임향 600ml 표시 이미지",
@@ -1711,6 +1729,12 @@
     "nutritionBasis": {
       "amount": 600,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   },
   {
@@ -1742,8 +1766,8 @@
     "carbs": 3,
     "sodium": 273,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/monster-zero.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/monster-zero.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "몬스터에너지 공식 판매몰 · 사용자 제공 몬스터 에너지 제로 슈거 355ml 표시 이미지",
@@ -1775,6 +1799,12 @@
     "nutritionBasis": {
       "amount": 355,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   },
   {
@@ -1811,8 +1841,8 @@
     "carbs": 4,
     "sodium": 275,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/monster-ultra.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/monster-ultra.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "몬스터에너지 공식 판매몰 · 사용자 제공 몬스터 에너지 울트라 355ml 표시 이미지",
@@ -1844,6 +1874,12 @@
     "nutritionBasis": {
       "amount": 355,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   },
   {
@@ -1882,8 +1918,8 @@
     "carbs": 2,
     "sodium": 220,
     "status": "현재 판매·배합 확인 필요",
-    "image": "assets/monster-peach.svg",
-    "imageType": "임시 구분용 일러스트 · 실제 제품 이미지 아님",
+    "image": "assets/monster-peach.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "몬스터에너지 공식 판매몰 · 사용자 제공 몬스터 울트라 피치 킨 355ml 표시 이미지",
@@ -1915,6 +1951,12 @@
     "nutritionBasis": {
       "amount": 355,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   },
   {
@@ -1951,8 +1993,8 @@
     "carbs": 10,
     "sodium": 40,
     "status": "현재 판매 여부 미확인",
-    "image": "assets/miero.svg",
-    "imageType": "제품 구분용 일러스트",
+    "image": "assets/miero.png",
+    "imageType": "제품 사진",
     "historicalPrice": null,
     "source": {
       "title": "미에로화이바 공식 판매몰 · 사용자 제공 스파클링 제로 슈가 250ml 표시 이미지",
@@ -1980,6 +2022,12 @@
     "nutritionBasis": {
       "amount": 250,
       "unit": "ml"
+    },
+    "imageSource": {
+      "title": "인터넷 검색 · 사용자 제공 이미지",
+      "url": null,
+      "checked": "2026-11-12",
+      "scope": "사용자 제공 파일. 원본 페이지·외부 재사용 허락 미확인. 권리 문제 또는 삭제 요청 시 내리거나 교체합니다."
     }
   }
 ]
