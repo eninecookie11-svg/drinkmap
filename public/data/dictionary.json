@@ -49,25 +49,27 @@
   {
     "name": "소비톨",
     "en": "Sorbitol",
-    "text": "등록 제품의 혼합제제에 D-소비톨로 표시된 원료입니다.",
-    "note": "사이트에서는 D-소비톨을 소비톨로 정규화해 표시합니다. 상세 설명은 확인 중입니다.",
+    "text": "단맛을 내는 당알코올의 한 종류로, 식품에서 설탕을 대신하는 감미료로 쓰입니다.",
+    "note": "원재료명의 D-소비톨은 사이트에서 소비톨로 통일해 표시합니다. 제품별 사용 여부와 함량은 제품 표시를 확인하세요.",
     "page": null,
     "source": {
-      "title": "탐스제로 파인애플 · 사용자 제공 표시 이미지",
-      "url": "https://brand.naver.com/lottechilsung/products/8321129877",
-      "checked": "2026-11-11"
+      "title": "미국 FDA · 소비톨 설명 자료",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2012/201194Orig1s000PharmR.pdf",
+      "checked": "2026-11-12",
+      "scope": "감미료의 종류·용도 설명 참고. 의약품 심사자료 중 원료 설명이며 국내 제품의 함량·안전성을 검증한 자료는 아닙니다."
     }
   },
   {
     "name": "효소처리스테비아",
-    "en": "Enzyme-treated stevia",
-    "text": "등록 제품의 원재료명에 효소처리스테비아로 표시된 감미료입니다.",
-    "note": "스테비올배당체와 별도 항목으로 집계합니다. 상세 설명은 확인 중입니다.",
+    "en": "Enzymatically Modified Stevia",
+    "text": "스테비아 추출물에 효소를 이용해 포도당을 붙여 얻는 감미료입니다. 포도당이 결합한 스테비오사이드 등이 주요 성분입니다.",
+    "note": "스테비올배당체와 관련된 감미료지만, 제품에 표시된 이름에 따라 별도 항목으로 기록하고 집계합니다.",
     "page": null,
     "source": {
-      "title": "환타 제로 파인애플 · 사용자 제공 표시 이미지",
-      "url": "https://brand.naver.com/cocacola/products/8289845051",
-      "checked": "2026-11-11"
+      "title": "식품의약품안전처 · 효소처리스테비아 기준·규격",
+      "url": "https://www.foodsafetykorea.go.kr/upload/residue/2-4-602.pdf",
+      "checked": "2026-11-12",
+      "scope": "감미료의 정의·성분 설명 참고. 개별 음료의 배합·함량을 검증한 자료는 아닙니다."
     }
   }
 ]
