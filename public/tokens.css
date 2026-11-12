@@ -37,3 +37,5 @@
 @media(max-width:760px){:root{--header-brand-width:210px;--header-brand-height:52px}}
 
 @media(max-width:760px){:root{--search-height:54px;--mobile-search-control-height:38px;--mobile-catalog-title-gap:16px;--mobile-compare-padding:20px}}
+
+:root{--reset-spin-duration:280ms}
