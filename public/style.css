@@ -96,6 +96,7 @@ header nav button{justify-content:center}
  header nav a:hover .title-highlight::before,header nav button:hover .title-highlight::before{transform:translate(var(--title-band-shift-x),calc(var(--title-band-shift-y) + var(--nav-band-hover-drop)))}
 }
 header nav a:focus-visible .title-highlight,header nav button:focus-visible .title-highlight{transform:scale(var(--nav-hover-scale))}
+header nav a:focus,header nav button:focus{outline:none}
 header nav a:focus-visible,header nav button:focus-visible{color:var(--ink);font-weight:var(--nav-emphasis-weight)}
 header nav a:focus-visible .title-highlight::before,header nav button:focus-visible .title-highlight::before{transform:translate(var(--title-band-shift-x),calc(var(--title-band-shift-y) + var(--nav-band-hover-drop)))}
 .results-bar label{display:flex;align-items:center;gap:var(--space-3)}
