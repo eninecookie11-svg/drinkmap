@@ -166,3 +166,5 @@ header .logo{flex-shrink:0}
 .footer-tagline{text-align:left;padding-left:calc(var(--header-logo-width) * var(--logo-art-inset));word-break:keep-all}
 
 .recent [data-clear-recent]{margin-left:var(--recent-clear-gap)}
+
+.filters select:focus,.filters select:focus-visible{outline:none}
