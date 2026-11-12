@@ -32,3 +32,6 @@
 @media(max-width:760px){:root{--card-footer-height:72px}}
 
 :root{--caffeine-tag-background:#ffead6;--caffeine-tag-color:#87400d}
+
+:root{--header-brand-width:240px;--header-brand-height:58px}
+@media(max-width:760px){:root{--header-brand-width:210px;--header-brand-height:52px}}

@@ -176,3 +176,9 @@ header .logo{flex-shrink:0}
 .card-bottom{grid-template-columns:1fr;grid-template-rows:auto;min-height:var(--card-footer-height);justify-items:end}
 
 .tag.caffeine-positive{background:var(--caffeine-tag-background);color:var(--caffeine-tag-color)}
+
+.header-logo{width:var(--header-brand-width);height:var(--header-brand-height)}
+
+header .logo{position:relative;left:calc(-1 * var(--header-brand-width) * var(--logo-art-inset))}
+header nav button:last-child{justify-content:flex-end}
+@media(min-width:1400px){.header-inner{width:min(calc(100vw - var(--ad-rail-space)),var(--max));margin-left:calc((100vw - var(--ad-rail-space) - min(calc(100vw - var(--ad-rail-space)),var(--max)))/2 + var(--ad-content-shift));margin-right:0}}
