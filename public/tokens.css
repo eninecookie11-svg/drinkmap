@@ -30,3 +30,5 @@
 @media(max-width:760px){:root{--card-footer-height:104px}}
 
 @media(max-width:760px){:root{--card-footer-height:72px}}
+
+:root{--caffeine-tag-background:#ffead6;--caffeine-tag-color:#87400d}
